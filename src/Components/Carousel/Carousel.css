@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.slider{
+    width: 100%;
+    padding: 0;
+}
+.slide_img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+}
+.slick-arrow, .slick-next button{
+    display: none;
+}

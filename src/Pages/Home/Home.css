@@ -1,0 +1,422 @@
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    z-index: -4;
+    width: 100%;
+    margin: auto;
+
+}
+
+.slide {
+    flex: 0 0 100%;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+    margin-top: 5px;
+    
+}
+.inside-1{
+    position: relative;
+}
+.inside-1{
+    font-size: 2em;
+    position: absolute;
+    left: 50px;
+    top: 70px;
+    width: 55%;
+    animation-name: demo;
+    animation-duration: 2s;
+}
+.item-1{
+    text-shadow: 0px 0px 2px #E43014;
+}
+.free{
+    font-size: 20px;
+    color: #D80E5E;
+}
+.orderbtn{
+    border: 1px solid #204117;
+    background-color: #204117;
+    padding: 3px 7px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.orderbtn a:hover{
+    background-color: #E43014;
+    border: transparent;
+
+}
+@keyframes demo {
+    from {top: 50%;}
+    to {top: 15%;}
+  }
+
+.inside-2{
+    position: absolute;
+    top: 5rem;
+    width: 50rem;
+    margin-left: 5%;
+}
+.inside-2 button a{
+    text-decoration: none;
+    color: #fff;
+}
+.item-2{
+    font-size: 3em;
+    color:brown;
+    text-shadow: 2px 2px 2px #000;
+}
+.inside-2 button{
+    border: 1px solid #204117;
+    background-color: #204117;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+       cursor: pointer;
+}
+
+.inside-2 button:hover{
+    background-color: #E43014;
+    border: transparent;
+}
+
+.inside-3{
+    position: absolute;
+    top: 5rem;
+    width: 50rem;
+    margin-left: 5%;
+    object-fit: contain;
+}
+.inside-3 button a{
+    text-decoration: none;
+    color: #fff;
+}
+.item-3{
+    font-size: 3em;
+    color:#204117;
+    text-shadow: 2px 2px 2px #e1e1e1;
+}
+.inside-3 button{
+    border: 1px solid #204117;
+    background-color: #204117;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.inside-3 button:hover{
+    background-color: #E43014;
+    border: transparent;
+}
+/* #prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #fff;
+    border: transparent;
+    background: transparent;
+    color: #0909099d;
+    outline: none;
+} */
+/* #prev:hover{
+    border: 1px solid #fff;
+    background-color: #DDC9B3;
+}
+#next:hover{
+    border: 1px solid #fff;
+    background-color: #DDC9B3;
+} */
+
+/* menu page */
+
+.cata-title{
+    font-size: 2em;
+    margin: 20px 0px 20px 40px;
+    font-weight: 600;
+}
+.cata-title a{
+    text-decoration: none; 
+    color:#000;
+}
+.cata-title a:hover{
+    color: #149104;
+
+}
+.row-1-icon{ 
+    display: flex;  
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.row-2-icon{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.icon{
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid #159104b6;
+}
+.icon img{
+    width: 180px;
+    height: 150px;
+    transition: 0.5s;   
+}
+.icon:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.icon img:hover{
+    transform: scale(1.2);    
+}
+
+/* advertisement */
+.advertisement{
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+
+}
+.advertisement a{
+    color: #fff;
+}
+.in_ad{
+    position: absolute;
+    top:3rem;
+    margin-left: 20px;
+    font-size: 22px;
+}
+.in_ad p{
+    font-size: 35px;
+}
+.in_ad a{
+    background-color: darkblue;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 4px;
+     box-shadow: 0px 0px 5px darkblue;
+     font-size: 20px;
+ 
+}
+.img1{
+    width: 550px;
+    height: 314px;
+    margin-left: 15px;
+}
+.advertisement img:hover{
+    transform: scale(1.02);
+    overflow: hidden;
+    transition: .2s;
+}
+/* offercard */
+.offer_menus{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+.offers img{
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.offers img:hover{
+    transform: scale(1.04);
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px){
+    .slide img{
+        margin-top: 55px;
+        height: 45vh;
+    }
+    .item-1{
+        font-size: 17px;
+        width: 300px;
+    }
+    .inside-1{
+        font-size: 2em;
+        position: absolute;
+        left: 10px;
+        top: 70px;
+        width: 300px;
+        animation-name: demo;
+        animation-duration: 2s;
+    }
+
+@keyframes demo {
+    from {top: 180px;}
+    to {top: 70px;}
+  }
+  .inside-1 button{
+    padding: 5px;
+  }
+  .free{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .cata-title{
+    font-size: 25px;
+    margin: 10px;
+  }
+  .menu-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+.row-1-icon{ 
+    display: flex; 
+   flex-direction: column;
+   margin-bottom: 0px;
+
+}
+.row-2-icon{
+    
+    display: flex;
+    flex-direction: column;
+} 
+.icon{
+    width: 130px;
+    height: 140px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 23px;
+    border: 1px solid #159104b6;
+}
+.icon img{
+    width: 130px;
+    height: 100px;
+    transition: 0.5s
+}
+.icon:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.icon img:hover{
+    transform: scale(1.2);    
+}
+.advertisement{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 5px;
+}
+.img1{
+    width: 100%;
+    margin: 0px;
+    height: 60vh;
+}
+.advertisement img{
+    width: 100%;
+}
+.out{
+    display: none;
+}
+.offer_menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
+
+@media (min-width:481px) and (max-width:768px){
+    .slide img{
+        margin-top: 55px;
+        height: 55vh;
+    }
+    .item-1{
+        font-size: 21px;
+        width: 450px;
+    }
+    .inside-1{
+        font-size: 2em;
+        position: absolute;
+        left: 10px;
+        top: 70px;
+        width: 300px;
+        animation-name: demo;
+        animation-duration: 2s;
+    }
+
+    
+   
+
+@keyframes demo {
+    from {top: 180px;}
+    to {top: 70px;}
+  }
+  .inside-1 button{
+    padding: 5px;
+  }
+  .free{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .cata-title{
+    font-size: 25px;
+    margin: 10px;
+  }
+  .menu-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .row-1-icon{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .row-2-icon{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.icon{
+    width: 200px;
+    height: 260px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 23px;
+    border: 1px solid #159104b6;
+}
+.icon img{
+    width: 180px;
+    height: 200px;
+    transition: 0.5s
+}
+.icon:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.icon img:hover{
+    transform: scale(1.2);    
+}
+
+}
